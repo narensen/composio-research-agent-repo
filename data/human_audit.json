@@ -1,0 +1,182 @@
+[
+  {
+    "app_id": 5,
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "pass1_correct": true,
+    "pass2_correct": true,
+    "status": "Verified",
+    "error_notes": "Confirmed schema-per-tenant REST+GraphQL + Bearer/OAuth2 on docs.twenty.com."
+  },
+  {
+    "app_id": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "pass1_correct": true,
+    "pass2_correct": true,
+    "status": "Verified",
+    "error_notes": "Confirmed OAuth2 Client Credentials on api.docs.dealcloud.com; enterprise-gated."
+  },
+  {
+    "app_id": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 missed Official MCP + OAuth apps; fixed via plain.com/docs/graphql/authentication."
+  },
+  {
+    "app_id": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 hallucinated OAuth2; live docs proved unscoped HTTP Basic Auth + enterprise gate."
+  },
+  {
+    "app_id": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "pass1_correct": true,
+    "pass2_correct": true,
+    "status": "Verified",
+    "error_notes": "Confirmed free-plan API addon + Swagger REST API (1000 req/min)."
+  },
+  {
+    "app_id": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 missed Tech Partnership gate on OAuth2 vs customer Basic Auth."
+  },
+  {
+    "app_id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 cited deprecated v1 API keys (EOL Dec 2025); fixed to v2/v3 OAuth2 + PIT."
+  },
+  {
+    "app_id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 missed public REST API and Official MCP added in Settings -> MCP & API keys."
+  },
+  {
+    "app_id": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "pass1_correct": true,
+    "pass2_correct": true,
+    "status": "Verified",
+    "error_notes": "Confirmed LWA OAuth2 + strict PII restricted-role security review."
+  },
+  {
+    "app_id": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 missed Commas rebrand (commasdocs.com) with scoped x-api-key + sandbox."
+  },
+  {
+    "app_id": 59,
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 misread Mintlify docs as self-serve; Pass 2 caught explicit sales-contact gate."
+  },
+  {
+    "app_id": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 missed 2026 Official MCP (OAuth 2.1 only) + Public API (clay-api-key) split."
+  },
+  {
+    "app_id": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "pass1_correct": true,
+    "pass2_correct": true,
+    "status": "Verified",
+    "error_notes": "Confirmed OAuth2 + PAT + official @netlify/mcp repo."
+  },
+  {
+    "app_id": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "pass1_correct": true,
+    "pass2_correct": true,
+    "status": "Verified",
+    "error_notes": "Confirmed Management API OAuth2/PAT + official hosted mcp.supabase.com/mcp."
+  },
+  {
+    "app_id": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "pass1_correct": true,
+    "pass2_correct": true,
+    "status": "Verified",
+    "error_notes": "Confirmed GraphQL + OAuth2/API Key + official mcp.linear.app/mcp on Free tier."
+  },
+  {
+    "app_id": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "pass1_correct": true,
+    "pass2_correct": true,
+    "status": "Verified",
+    "error_notes": "Confirmed REST API + 65-tool OAuth-only hosted MCP (100 calls/day Free)."
+  },
+  {
+    "app_id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "pass1_correct": false,
+    "pass2_correct": false,
+    "status": "Partial / Defeated",
+    "error_notes": "No standalone public Paygent Connect API docs exist; inferred NMI security_key model from NMI gateway docs. Needs merchant/partner contact to confirm custom wrapper endpoints."
+  },
+  {
+    "app_id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 guessed generic payment API; live check proved FX verification layer + Official MCP."
+  },
+  {
+    "app_id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 marked blocked (no REST API); Pass 2 found official OAuth MCP (mcp.otter.ai/mcp)."
+  },
+  {
+    "app_id": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "pass1_correct": false,
+    "pass2_correct": true,
+    "status": "Fixed in Pass 2",
+    "error_notes": "Pass 1 fell for /cli hint trap; Pass 2 confirmed full async REST API on docs.higgsfield.ai."
+  }
+]

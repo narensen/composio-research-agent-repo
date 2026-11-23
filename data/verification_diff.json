@@ -1,0 +1,110 @@
+[
+  {
+    "app_id": 97,
+    "app_name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "api_surface / buildability_verdict",
+    "pass1_value": "CLI-Only / Skill / CLI Wrapper",
+    "pass2_value": "REST / Ship with Caveats (Authorization: Key ID:SECRET)",
+    "reason": "Hint URL (higgsfield.ai/cli) misled Pass 1 into classifying it as CLI-only; live doc verification on docs.higgsfield.ai uncovered a full async REST API + SDKs."
+  },
+  {
+    "app_id": 50,
+    "app_name": "fanbasis",
+    "category": "Ecommerce",
+    "field": "access_tier / evidence_urls",
+    "pass1_value": "Partner / Sales-Gated (no public docs found)",
+    "pass2_value": "Self-Serve (Free / Trial) via Commas API (commasdocs.com)",
+    "reason": "Developer portal rebranded to Commas (commasdocs.com) serving fanbasis.com/public-api/* with scoped x-api-key and a free sandbox at api-sandbox.commas.net."
+  },
+  {
+    "app_id": 37,
+    "app_name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "existing_mcp / api_surface",
+    "pass1_value": "None / Narrow (Webhooks only)",
+    "pass2_value": "Official MCP / Public REST API (Medium)",
+    "reason": "Live check of Oct 2026 Help Center confirmed self-serve Settings -> MCP & API keys on free accounts with full CRUD for contacts, tags, courses, and subscriptions."
+  },
+  {
+    "app_id": 60,
+    "app_name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "field": "auth_methods / existing_mcp",
+    "pass1_value": "Webhook-only / None",
+    "pass2_value": "API Key + OAuth2 / Official MCP (OAuth 2.1 only)",
+    "reason": "Live 2026 verification revealed dual surfaces: Official MCP (OAuth 2.1 only, unsuitable for headless cron agents) AND Public API (clay-api-key header)."
+  },
+  {
+    "app_id": 59,
+    "app_name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "field": "access_tier / buildability_verdict",
+    "pass1_value": "Self-Serve (Free / Trial) / Ship Today",
+    "pass2_value": "Partner / Sales-Gated / Blocked (Outreach Needed)",
+    "reason": "Live crawl of waterfall.mintlify.app/v1/authentication confirmed explicit sales gate: 'Contact the team for API access and pricing.'"
+  },
+  {
+    "app_id": 29,
+    "app_name": "Aircall",
+    "category": "Communications and Messaging",
+    "field": "access_tier / main_blocker",
+    "pass1_value": "Self-Serve (Free / Trial) / None",
+    "pass2_value": "Sandbox Free, Prod Gated (OAuth requires Tech Partnership)",
+    "reason": "Oct 2026 Aircall docs clarify Basic Auth works for existing customers, but multi-tenant OAuth2 client ID/secret requires joining Tech Partnerships."
+  },
+  {
+    "app_id": 34,
+    "app_name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "auth_methods / notes",
+    "pass1_value": "API Key (v1) / Self-Serve",
+    "pass2_value": "OAuth2 + Bearer / PAT (v2/v3) / Paid Plan Required ($97+/mo)",
+    "reason": "Nov 2026 Help Center confirmed API v1 reached EOL Dec 31, 2025; modern integrations require v2/v3 OAuth2 or Private Integration Tokens on paid plans."
+  },
+  {
+    "app_id": 92,
+    "app_name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "existing_mcp / buildability_verdict",
+    "pass1_value": "None / Blocked (No public API)",
+    "pass2_value": "Official MCP (mcp.otter.ai/mcp) / Ship with Caveats",
+    "reason": "Oct 30, 2026 Help Center confirmed Otter launched an official remote Streamable HTTP MCP server over OAuth despite having no general REST API."
+  },
+  {
+    "app_id": 17,
+    "app_name": "Plain",
+    "category": "Support and Helpdesk",
+    "field": "existing_mcp / auth_methods",
+    "pass1_value": "None / API Key only",
+    "pass2_value": "Official MCP / Bearer (Machine Users) + OAuth2",
+    "reason": "Live Plain GraphQL docs confirmed fine-grained Machine User API keys, OAuth apps, an official MCP server, and an official Agent Skill."
+  },
+  {
+    "app_id": 85,
+    "app_name": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "one_liner / existing_mcp",
+    "pass1_value": "Payment processor / None",
+    "pass2_value": "FX verification layer / Official MCP (ipayx.ai/docs/mcp-server)",
+    "reason": "Pass 1 hallucinated generic payment gateway copy from name alone; live doc check confirmed FX spread auditing API + Official MCP with free 10/day tier."
+  },
+  {
+    "app_id": 96,
+    "app_name": "Devin",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods / main_blocker",
+    "pass1_value": "API Key (v1 apk_)",
+    "pass2_value": "Bearer / PAT (v3 cog_ Service User Keys required for MCP)",
+    "reason": "Live docs.devin.ai verification caught that legacy apk_ keys are deprecated and explicitly rejected by the Devin MCP server."
+  },
+  {
+    "app_id": 20,
+    "app_name": "Gladly",
+    "category": "Support and Helpdesk",
+    "field": "auth_methods / access_tier",
+    "pass1_value": "OAuth2 / Self-Serve Paid",
+    "pass2_value": "Basic Auth (unscoped) / Partner / Sales-Gated",
+    "reason": "Nov 2026 docs confirmed HTTP Basic Auth (email:token) with zero scope restrictions tied to a user account, and no self-serve signup."
+  }
+]
