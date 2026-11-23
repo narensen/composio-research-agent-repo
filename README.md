@@ -2,6 +2,8 @@
 
 An automated 3-pass research and verification pipeline built with the **Composio Python SDK (`composio`)**, Pydantic v2 structured outputs, and an adversarial doc-grounding verification loop to audit 100 SaaS/AI/developer apps across 10 categories.
 
+Vercel link -> https://composio-research-agent-repo.vercel.app/
+
 ## Architecture
 
 1. **Pass 1 — Fast Discovery (`src/pass1_research.py`)**
