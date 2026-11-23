@@ -36,10 +36,6 @@ python src/pass3_audit.py --score
 python src/export_bundle.py
 ```
 
-## Deploy the Case Study
-
-`dist/index.html` is a zero-build, single-file static HTML page. Deploy `dist/` directly to Vercel, Netlify, or GitHub Pages:
-
 ```bash
 npx vercel dist --prod
 ```
